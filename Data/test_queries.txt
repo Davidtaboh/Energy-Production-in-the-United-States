@@ -1,0 +1,13 @@
+select state_id, sum (generation_megawatthours) 
+from energy_data where energy_source 
+in ('Wind','Coal') 
+and year_energy = 1990
+group by state_id
+
+-- -- check "group by"
+-- select year_energy, state_id, generation_megawatthours
+-- from energy_data where energy_source 
+-- in ('Wind','Coal') 
+-- and year_energy = 1990
+
+select * from population_data where year_population = 1990
