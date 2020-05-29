@@ -1,8 +1,21 @@
+/* /* !
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
 body {
     background: grey;
   }
   /* every box is this size */
   
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
   .box{
     padding: 10px;
     background: #f1f1f1;
@@ -14,13 +27,9 @@ body {
     border-radius: 3px;
     font: Times normal;
   }
-
-  .dropdown {
-    color: #5196fd;
-  }
   
   .box b img {
-    margin-right:10px;
+    margin-right:30px;
   }
   
   /* Giving our navbar some padding and a background color */
@@ -61,11 +70,12 @@ body {
   
   .energysource {
     color: white;
-    font-family: verdana;
+    font-family: Verdana;
     font-size: 40px;
     background-color: #2448be;
     border: 1px solid #2448be;
       padding: 15px;
+    
   }
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
   @media (max-width: 480px) {
@@ -104,4 +114,4 @@ body {
       [class*="col-"] {
           width: 100%;
       }
-  }
+  } 
