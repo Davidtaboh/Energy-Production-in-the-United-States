@@ -1,4 +1,4 @@
-,state_id,year,conventional_energy,green_energy,ideology_score1,ideology_score2,population,median_income
+,state_id,year,conventional_energy,green_energy,pop_ideology,gov_ideology,population,median_income
 0,AK,1990,4624985.0,974521.0,54.8084831237793,55.81795883178711,553290.0,71686
 1,AL,1990,57233744.0,22418389.0,33.835350036621094,42.68737030029297,4050055.0,42607
 2,AR,1990,24119920.0,14979678.0,41.13786697387695,66.75050354003906,2356586.0,41565
