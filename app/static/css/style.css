@@ -1,9 +1,21 @@
-body {
+/* /* !
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+.body {
     background: grey;
   }
   /* every box is this size */
   
-  .box{
+.a {
+  text-decoration: none;
+  color: black;
+}
+
+
+ .box{
     padding: 10px;
     background: #f1f1f1;
     margin-top:50px;
@@ -14,13 +26,9 @@ body {
     border-radius: 3px;
     font: Times normal;
   }
-
-  .dropdown {
-    color: #5196fd;
-  }
   
   .box b img {
-    margin-right:10px;
+    margin-right:30px;
   }
   
   /* Giving our navbar some padding and a background color */
@@ -28,7 +36,7 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     padding: 25px;
-    background: rgb(25, 134, 25);
+    background: #5FA435;
   }
   
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -61,11 +69,12 @@ body {
   
   .energysource {
     color: white;
-    font-family: verdana;
+    font-family: Verdana;
     font-size: 40px;
-    background-color: #2448be;
-    border: 1px solid #2448be;
+    background-color: #293050;
+    border: 1px solid #293050;
       padding: 15px;
+    
   }
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
   @media (max-width: 480px) {
@@ -104,4 +113,4 @@ body {
       [class*="col-"] {
           width: 100%;
       }
-  }
+  } 
