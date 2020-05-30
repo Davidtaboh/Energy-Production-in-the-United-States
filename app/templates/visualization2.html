@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}">
 
 </head>	  
 <body>
@@ -19,10 +19,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="./landing.html"><span class="energysource">Energy Sources</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" href="./"><span class="energysource">Energy Sources</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -57,10 +54,10 @@
                                 <h1 class="title">Visualizations</h1>
                             </div>
                             <div class="content">
-                               <a href="./visualization1.html"><img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="180" width="180"></a>
-	                           <a href="./visualization2.html"><img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="180" width="180"></a>
-	                           <a href="./visualization3.html"><img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="180" width="180"></a>
-	                           <a href="./visualization4.html"><img src="./assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="180" width="180"></a>
+                               <a href="./visualization1"><img src="./assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="180" width="180"></a>
+	                           <a href="./visualization2"><img src="./assets/images/Fig2.png" alt="Latitude vs. Humidity" height="180" width="180"></a>
+	                           <a href="./visualization3"><img src="./assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="180" width="180"></a>
+	                           <a href="./visualization4"><img src="./assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="180" width="180"></a>
 	                        </div>
 	                    </div>
 	                </div>

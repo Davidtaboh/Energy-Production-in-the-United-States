@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}">
 </head>	
 
 <body>
@@ -21,17 +21,14 @@
     	<nav class="navbar navbar-inverse">
     		<div class="container-fluid">
             	<div class="navbar-header">
-                	<a class="navbar-brand" href="./landing.html"><span class="energysource">Energy Sources in the US</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-	                    <span class="navbar-toggler-icon"></span>
-	                </button>
+                	<a class="navbar-brand" href="./"><span class="energysource">Energy Sources in the US</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
 	              	<li>
 	                	<a class="nav-link" href="./comparisons"><span class="c-d">Comparisons</a>
 	             	</li>
 	              	<li>
-	                	<a class="nav-link" href="./data.html"><span class="c-d">Data</a>
+	                	<a class="nav-link" href="./data"><span class="c-d">Data</a>
 	              	</li>
                 </ul>
 			</div>
@@ -50,19 +47,19 @@
                         		<div class="row">
                         			<div class="col-xs-12 col-sm-12 col-md-6">
 	                					<h2>[Insert Title]</h2>
-	              						<a href="./visualization1.html"><img class="img-fluid" src=alt="Insert Title" height="500" width="500"></a>
+	              						<a href="./visualization1"><img class="img-fluid" src=alt="Insert Title" height="500" width="500"></a>
 	           						</div>
 	           						<div class="col-xs-12 col-sm-12 col-md-6">
 	              						<h2>[Insert Title]</h2>
-	              						<a href="./visualization2.html"><img class="img-fluid" src=alt="Insert Title" height="500" width="500"></a>
+	              						<a href="./visualization2"><img class="img-fluid" src=alt="Insert Title" height="500" width="500"></a>
 	           						</div>
 	            					<div class="col-xs-12 col-sm-12 col-md-6">
 	               						<h2>[Insert Title]</h2>
-	               						<a href="./visualization3.html"><img class="img-fluid" src= alt="Insert Title" height="500" width="500"></a>
+	               						<a href="./visualization3"><img class="img-fluid" src= alt="Insert Title" height="500" width="500"></a>
 	            					</div>
 	            					<div class="col-xs-12 col-sm-12 col-md-6">
 	               						<h2>[Insert Title]</h2>
-								 		<a href="./visualization4.html"><img class="img-fluid" src= alt="Insert Title" height="500" width="500"></a>
+								 		<a href="./visualization4"><img class="img-fluid" src= alt="Insert Title" height="500" width="500"></a>
 									</div>	 
 	          					</div>
 	          				</div>

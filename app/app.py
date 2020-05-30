@@ -37,25 +37,56 @@ engine = create_engine(rds_connection_string)
 
 session = Session(engine)
 
+# @app.route('/')
+# def welcome():
+
+#     return (
+#          f"Welcome Energy Production API <br/>"
+#         f"Available Routes:<br/>"
+#         f"/api/v1.0/Landing<br/>"
+#         f"/api/v1.0/Comparison<br/>"
+#         f"/api/v1.0/Data<br/>"
+#         f"/api/v1.0/Visualization1<br/>"
+#         f"/api/v1.0/Visualization2<br/>"
+#         f"/api/v1.0/Visualization3<br/>"
+#         f"/api/v1.0/Visualization4<br/>"
+
+#     )
 
 @app.route('/')
 def home():
     return render_template('landing.html')
 
 @app.route('/comparisons')
-def results():
+def comparisons():
 
     return render_template('comparisons.html')
 
+@app.route('/data')
+def data():
+
+    return render_template('data.html')    
+
 @app.route('/visualization1')
-def picture1():
+def visualization1():
 
     return render_template('visualization1.html')
 
 @app.route('/visualization2')
-def picture2():
+def visualization2():
 
     return render_template('visualization2.html')
+
+@app.route('/visualization3')
+def visualization3():
+
+    return render_template('visualization3.html')
+
+@app.route('/visualization4')
+def visualization4():
+
+    return render_template('visualization4.html')
+
 
     # Green & Conventional Energy Total 1990-2018 By State // Bargraph
 #     green_energy = session.query(energyData.state_id, energyData.energy_type, func.sum(energyData.generation_megawatthours)).\

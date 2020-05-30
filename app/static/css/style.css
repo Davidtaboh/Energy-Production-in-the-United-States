@@ -4,19 +4,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
-body {
+.body {
     background: grey;
   }
   /* every box is this size */
   
-a {
+.a {
   text-decoration: none;
   color: black;
 }
 
 
-
-  .box{
+ .box{
     padding: 10px;
     background: #f1f1f1;
     margin-top:50px;
@@ -37,7 +36,7 @@ a {
     margin-right: 0px;
     margin-left: 0px;
     padding: 25px;
-    background: rgb(25, 134, 25);
+    background: #5FA435;
   }
   
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -72,8 +71,8 @@ a {
     color: white;
     font-family: Verdana;
     font-size: 40px;
-    background-color: #2448be;
-    border: 1px solid #2448be;
+    background-color: #293050;
+    border: 1px solid #293050;
       padding: 15px;
     
   }
