@@ -14,7 +14,6 @@
   color: black;
 }
 
-
  .box{
     padding: 10px;
     background: #f1f1f1;
@@ -26,7 +25,7 @@
     border-radius: 3px;
     font: Times normal;
   }
-  
+
   .box b img {
     margin-right:30px;
   }
@@ -37,18 +36,22 @@
     margin-left: 0px;
     padding: 25px;
     background: #5FA435;
+    display: center;
   }
   
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .navbar li {
-    display: d-block;
+  .navbar ul {
     padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     cursor: pointer;
-    color: black;
-    text-decoration: none;
   }
+
+  .navbar-brand {
+    position: relative;
+    /* left: 300px;   */
+  }
+
   h1 {
     font-size: 35px;
     text-align: center;
@@ -70,9 +73,10 @@
   .energysource {
     color: white;
     font-family: Verdana;
+    text-align: center;
     font-size: 40px;
     background-color: #293050;
-    border: 1px solid #293050;
+    border: 1px solid #5FA435;
       padding: 15px;
     
   }
