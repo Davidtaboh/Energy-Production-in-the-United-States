@@ -87,6 +87,11 @@ def visualization4():
 
     return render_template('visualization4.html')
 
+@app.route('/visualization5')
+def visualization5():
+
+    return render_template('visualization5.html')
+
 
     # Green & Conventional Energy Total 1990-2018 By State // Bargraph
 #     green_energy = session.query(energyData.state_id, energyData.energy_type, func.sum(energyData.generation_megawatthours)).\
