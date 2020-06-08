@@ -16,11 +16,11 @@ def comparisons():
 
     return render_template('comparisons.html')
 
-@app.route('/data')
-def data():
-    # path='Energy_merged.csv'
-    # energy_data = pd.read_csv(path)
-    # return jsonify(energy_data)    
+# @app.route('/data')
+# def data():
+#     # path='Energy_merged.csv'
+#     # energy_data = pd.read_csv(path)
+#     return jsonify(energy_data)    
 
 @app.route('/visualization1')
 def visualization1():
