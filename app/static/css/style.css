@@ -4,7 +4,19 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
-.body {
+img{
+  margin-top: 5px;
+  margin-right:5px;
+  margin-bottom:5px;
+  margin-left:5px;
+}
+
+.summary_head{
+  text-align: left;
+  text-size-adjust: 14px;
+}
+
+ .body {
     background: grey;
   }
   /* every box is this size */

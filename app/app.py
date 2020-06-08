@@ -1,57 +1,11 @@
 import numpy as np
 import pandas as pd
+import csv
 
 from flask import Flask, jsonify, render_template, request
 from sqlalchemy import func
 
-
-import sqlalchemy
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-from sqlalchemy import or_
-
-
 app = Flask(__name__)
-
-#Noaman
-# rds_connection_string = "postgres://NoamanJameel:Noamanj1919@localhost/Energy_db"
-# engine = create_engine(rds_connection_string)
-
-# Luke
-# path_string = "postgres:postgres@localhost:5432/energy"
-# engine = create_engine(f'postgresql+psycopg2://{path_string}')
-
-#Erica
-# path_string = "ericamatrese:Harrisburg1@localhost:5432/energy"
-# engine = create_engine(f"postgresql://{path_string}")
-
-#Jonathan
-rds_connection_string = "postgres://postgres:postgres@localhost:5432/test_db"
-engine = create_engine(rds_connection_string)
- 
-
-# Base = automap_base()
-# Base.prepare(engine, reflect=True)
-
-# energyData = Base.classes.energy_data
-
-session = Session(engine)
-
-# @app.route('/')
-# def welcome():
-
-#     return (
-#          f"Welcome Energy Production API <br/>"
-#         f"Available Routes:<br/>"
-#         f"/api/v1.0/Landing<br/>"
-#         f"/api/v1.0/Comparison<br/>"
-#         f"/api/v1.0/Data<br/>"
-#         f"/api/v1.0/Visualization1<br/>"
-#         f"/api/v1.0/Visualization2<br/>"
-#         f"/api/v1.0/Visualization3<br/>"
-#         f"/api/v1.0/Visualization4<br/>"
-
-#     )
 
 @app.route('/')
 def home():
@@ -64,8 +18,9 @@ def comparisons():
 
 @app.route('/data')
 def data():
-
-    return render_template('data.html')    
+    # path='Energy_merged.csv'
+    # energy_data = pd.read_csv(path)
+    # return jsonify(energy_data)    
 
 @app.route('/visualization1')
 def visualization1():

@@ -2,40 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
-    
+    <meta charset="utf-8" />
+
     <link rel="icon" type="image/png">
-    
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Energy Sources in the US Final Project</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-    <meta name="viewport" content="width=device-width"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
-</head>	  
+</head>
 
 <body>
-	<div class="container-fluid">
-    	<nav class="navbar">
-    		<div class="container-fluid">
-                	<a class="navbar-brand" href="./"><span class="energysource">Energy Sources in the US</span></a>
+    <div class="container-fluid">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./"><span class="energysource">Energy Sources in the US</span></a>
                 <ul class="nav navbar-right">
-	              	<li>
-	                	<a class="nav-link" href="./comparisons"><span class="c-d">Comparisons</span></a>
-	             	</li>
-	              	<li>
-	                	<a class="nav-link" href="./data"><span class="c-d">Data</span></a>
-	              	</li>
+                    <li>
+                        <a class="nav-link" href="./comparisons"><span class="c-d">Comparisons</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./data"><span class="c-d">Data</span></a>
+                    </li>
                 </ul>
-			</div>
-        </nav>  
-        
+            </div>
+        </nav>
+
         <div class="content">
             <div class="container">
                 <div class="row">
@@ -45,12 +46,49 @@
                                 <h1 class="title">Summary: Where We Landed</h1>
                             </div>
                             <div class="box">
-                            	<b><img src=https://images-na.ssl-images-amazon.com/images/I/716bEmgZlqL._AC_SX522_.jpg height="280" width="280" align="left"></b>
-                            	<p class="category">Green Energy remains a relatively small percentage of both the United States and the world energy portfolio. The reason of course, is that renewable power is expensive. But green energy generation has increased steadily over the last 3 decades.</p>
-                                <p class="category">For this project we chose to analyze data of energy produced by different sources and categorized them into green and conventional energy. Data shows energy produced from 1990-2018 by all 50 states.</p>
-                                <p class="category">As per our analysis in 1990, green energy production in the U.S stood at 1.7 billion (Mwh) and energy produced by conventional sources was 4.3 billion (Mwh). Green energy accounted for 29% of energy produced in 1990. Fast forward to 2018, this has risen to 34% of the energy produced in the U.S. Among the green energy sources wind and hydroelectric account for nearly 40% of energy produced in 2018. Energy production from wind farms has steadily increased since 1990, accounting for less than 1% of green energy to 20% in 2018.</p>
-                                <p class="category">In 2015 there were record investments in green energy and record capacity was added. Despite the massive investment, the global share of fossil fuels isnot shrinking very fast as expected. Green energy sources such as geothermal still account for a tiny share of the energy production, and there are certain factors that inhibit the growth of these projects. One factor could be the cost per watt for bigger projects.</p>
-                                <p class="category">Overall the green energy production has increased steadily over the last few decades, the green energy is growing from a very low base compared to conventional sources.</p>
+                                <b><img src=https://images-na.ssl-images-amazon.com/images/I/716bEmgZlqL._AC_SX522_.jpg
+                                        height="280" width="280" align="left"></b>
+
+                                    <h2 class='summary_head'>Scope</h1>
+                                        <p class="category">Our goal was to determine production trends for green and
+                                            conventional energy sources. We were also curious to see whether political
+                                            ideology influenced growth in green energy.</p>
+
+                                    <h2 class='summary_head'>Methodology</h1>
+                                        <p class="category">We examined <a
+                                                href=https://www.eia.gov/electricity/data/state target="_blank">data
+                                                from the U.S. Energy Information Association</a>
+                                            detailing energy sources by state from 1990-2018 in the United States. To examine the
+                                            impact of political ideology on energy production, we used <a
+                                                href=’https://rcfording.com/state-ideology-data’ target="_blank">annual
+                                                state ideology scores </a> from William D. Berry, Evan J. Ringquist, Richard
+                                            C. Fording, Russell L. Hanson as published in the Journal of Political Science
+                                            in 1998, which provides ideology measures from 1960 and has been maintained through 2017. </p>
+                                        <p class="category">Energy sources were categorized as green or conventional, then used
+                                            as input for regression-based machine learning models to determine potential
+                                            trends in green and conventional energy production. </p>
+                                        <p class="category">To determine the impact of ideology, we merged Fording et
+                                            al’s
+                                            ideology score with the dataset and calculated additional information
+                                            related to
+                                            change in green vs conventional energy production. </p>
+
+                                        <h2 class='summary_head'>Results</h1>
+                                            <p class="category">The data indicate that in 1990 green energy production
+                                                in the U.S stood at 1.7 billion megawatt hours (Mwh) and energy produced by
+                                                conventional sources was 4.3 billion (Mwh). Total green energy production in the U.S.
+                                                has risen from 29% of energy produced in 1990 to 34% in 2018. Among green energy
+                                                sources, wind and hydroelectric accounted for nearly 40% of green energy produced in
+                                                2018. Energy production from wind farms has steadily increased since 1990, accounting
+                                                for less than 1% of green energy to 20% in 2018. The biggest gains have been in solar energy
+                                                production, with solar sources contributing 1.2 million Mwh as recently as 2010 and
+                                                63.8 million in 2018.</p>
+                                            <p class="category">To illustrate these trends and provide a glimpse into
+                                                the future, we applied machine learning regression analysis onto the green energy and
+                                                conventional energy trends in the U.S.. Additionally we attempted to determine
+                                                whether a specific political ideology influenced gains in green energy production.
+                                                Unfortunately, the resulting graphs indicate no particular trend. The resulting
+                                                visualizations are seen to the right. </p>
                             </div>
                         </div>
                     </div>
@@ -60,26 +98,35 @@
                             <div class="page-header">
                                 <h1 class="title">Visualizations</h1>
                             </div>
-                            <div class="box">
-                                <a href="./visualization1"><img src="./static/images/Fig1.png" alt="Total" height="180" width="180"></a>
-                                <a href="./visualization2"><img src="./static/images/Fig2.png" alt="Conventional" height="180" width="180"></a>
-                                <a href="./visualization3"><img src="./static/images/Fig3.png" alt="Green" height="180" width="180"></a>
-                                <a href="./visualization4"><img src="./static/images/Fig4.png" alt="Regression Representing a Ratio of Conventional to Green energy" height="180" width="180"></a>
-                                <a href="./visualization5"><img src="./static/images/Fig5.png" alt="Relation Between Green Energy and Total Energy" height="180" width="180"></a>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-			</div>
-		</div>
-	</div>
+                            <a href="./visualization1"><img src="./static/images/Fig1.png" alt="Total" height="180"
+                                    width="220"></a>
+                            <a href="./visualization2"><img src="./static/images/Fig2.png" alt="Conventional"
+                                    height="180" width="220"></a>
+                            <a href="./visualization3"><img src="./static/images/Fig3.png" alt="Green" height="180"
+                                    width="220"></a>
+                            <a href="./visualization4"><img src="./static/images/Fig4.png"
+                                    alt="Regression Representing a Ratio of Conventional to Green energy" height="180"
+                                    width="220"></a>
+                            <a href="./visualization5"><img src="./static/images/Fig5.png"
+                                    alt="Relation Between Green Energy and Total Energy" height="180" width="220"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
 
 </html>
-   
