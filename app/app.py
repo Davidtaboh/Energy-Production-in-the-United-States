@@ -46,10 +46,10 @@ def visualization6():
 
     return render_template('visualization6.html')
 
-@app.route('/visualization7')
-def visualization7():
+# @app.route('/visualization7')
+# def visualization7():
 
-    return render_template('visualization7.html')
+#     return render_template('visualization7.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
