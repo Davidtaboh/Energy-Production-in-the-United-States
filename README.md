@@ -2,7 +2,7 @@
 
 This project examines US energy production levels, both conventional and green, and used machine learning to extrapolate future production. We also compared the political ideology of states to changes in year over year conventional and green energy production. We wanted to see if there was a correlation between the idealogy of a state government, in this case, mainly the composition of state legislatures, and changes to energy production in a given year.
 
-We used machine learning, in the form of regression analysis, to analyze our data, and scatterplots made with Python to vizualize the data. 
+We used machine learning, in the form of regression analysis, to analyze our data, and scatterplots to vizualize the data. All of this part was done with Python.
 
 The repository includes the backend code that produced our visualizations, the HTML and CSS that comprises the website, and a flask app that serves up the Python to our website. 
 
