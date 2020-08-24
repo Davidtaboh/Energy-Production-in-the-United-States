@@ -4,7 +4,7 @@ This project examines US energy production levels, both conventional and green, 
 
 We used machine learning, in the form of regression analysis, to analyze our data, and scatterplots made with Python to vizualize the data. 
 
-The repository includes the backend code that produced our visualizations, the HTML and CSS that comprises the website, and a flask app that serves up the Pythin to the website. 
+The repository includes the backend code that produced our visualizations, the HTML and CSS that comprises the website, and a flask app that serves up the Python to our website. 
 
 ### Prerequisites
 
